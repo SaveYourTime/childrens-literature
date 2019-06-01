@@ -7,7 +7,15 @@
  * Made By MaterializeCSS.com
  */
 
- nav ul a, nav .brand-logo {
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-fixed, thead, .container-wrapper {
+  background-color: rgb(246, 249, 236);
+}
+
+nav ul a {
   color: #444;
 }
 
@@ -15,8 +23,8 @@ p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: rgb(238, 247, 207);
+nav .brand-logo, .sidenav-trigger, .table-title, .footer-links>a:hover {
+  color: rgb(218, 231, 178);
 }
 
 .banner {
@@ -26,10 +34,6 @@ p {
 
 #about .col>p:first-child {
   margin: 0;
-}
-
-thead, .container-wrapper {
-  background-color: rgb(244, 247, 234);
 }
 
 :target::before {
@@ -45,18 +49,11 @@ th {
   word-break: keep-all;
 }
 
-.table-title {
-  color: rgb(152, 187, 39);
-}
-
 .table-wrapper {
   position: relative;
   max-height: 500px;
   overflow: hidden;
-}
-
-.table-wrapper.show {
-  max-height: unset;
+  transition: max-height .5s ease;
 }
 
 .table-wrapper .read-more {
@@ -73,17 +70,16 @@ th {
 /* read-more */
 
 .read-more a {
-  background: rgb(244, 247, 234);
+  background-color: rgb(246, 249, 236);
   color: #5e5e5e;
 }
 
 .read-more a:hover {
-  background: rgb(241, 247, 220);
-  color: #5e5e5e;
+  background-color: rgb(237, 243, 217);
 }
 
 .read-more a:focus {
-  background: rgb(238, 247, 207);
+  background-color: rgb(228, 237, 197);
 }
 
 /* footer */
@@ -102,10 +98,6 @@ footer>.footer-copyright {
   transition: color .5s ease;
 }
 
-.footer-links>a:hover {
-  color: rgb(238, 247, 207);
-}
-
 .footer-link {
   margin-bottom: 10px;
 }
@@ -118,5 +110,11 @@ footer>.footer-copyright {
 @media only screen and (min-width: 993px) {
   .clear-fix {
     clear: both;
+  }
+  nav.white {
+    background-color: transparent !important;
+  }
+  .hide-box-shadow {
+    box-shadow: unset;
   }
 }

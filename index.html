@@ -15,8 +15,10 @@
 
 <body>
   <div class="navbar-fixed">
-    <nav class="white" role="navigation">
+    <nav class="white hide-box-shadow" role="navigation">
       <div class="nav-wrapper container">
+        <a href="#" class="brand-logo center hide-on-large-only">鄉野羅漢</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#about">關於作者</a></li>
           <li><a href="#timeline">寫作年表</a></li>
@@ -26,20 +28,18 @@
           <li><a href="#">影片觀賞</a></li>
           <li><a href="#">展覽活動花絮</a></li>
         </ul>
-
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#about">關於作者</a></li>
-          <li><a href="#timeline">寫作年表</a></li>
-          <li><a href="#works">作品展示</a></li>
-          <li><a href="#info">展覽資訊</a></li>
-          <li><a href="#list">展品清單</a></li>
-          <li><a href="#">影片觀賞</a></li>
-          <li><a href="#">展覽活動花絮</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="#about">關於作者</a></li>
+    <li><a href="#timeline">寫作年表</a></li>
+    <li><a href="#works">作品展示</a></li>
+    <li><a href="#info">展覽資訊</a></li>
+    <li><a href="#list">展品清單</a></li>
+    <li><a href="#">影片觀賞</a></li>
+    <li><a href="#">展覽活動花絮</a></li>
+  </ul>
 
   <img class="banner" src="img/banner1.jpg" alt="" />
 
@@ -461,7 +461,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <a class="grey-text" href="https://saveyourtime.github.io/">SaveYourTime © 2019 Created by Aaron Lu</a>
+        <a class="grey-text" href="https://saveyourtime.github.io/" target="_blank">SaveYourTime © 2019 Created by Aaron
+          Lu</a>
       </div>
     </div>
   </footer>
