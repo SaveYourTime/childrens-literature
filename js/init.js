@@ -2,6 +2,12 @@
   $(function () {
     M.AutoInit();
 
+    $('.sidenav')
+      .sidenav()
+      .on('click tap', 'li a', () => {
+        $('.sidenav').sidenav('close');
+      });
+
     M.Collapsible.init($('.collapsible.expandable'), {
       accordion: false
     });
