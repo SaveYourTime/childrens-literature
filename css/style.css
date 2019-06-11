@@ -12,7 +12,7 @@ html {
 }
 
 .navbar-fixed, thead, .container-wrapper {
-  background-color: rgb(246, 249, 236);
+  background-color: rgb(243, 247, 234);
 }
 
 nav ul a {
@@ -70,16 +70,16 @@ th {
 /* read-more */
 
 .read-more a {
-  background-color: rgb(246, 249, 236);
+  background-color: rgb(243, 247, 234);
   color: #5e5e5e;
 }
 
 .read-more a:hover {
-  background-color: rgb(237, 243, 217);
+  background-color: rgb(232, 240, 216);
 }
 
 .read-more a:focus {
-  background-color: rgb(228, 237, 197);
+  background-color: rgb (222, 233, 197);
 }
 
 /* footer */
