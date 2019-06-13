@@ -7,10 +7,6 @@
  * Made By MaterializeCSS.com
  */
 
-html {
-  scroll-behavior: smooth;
-}
-
 .navbar-fixed, thead, .container-wrapper {
   background-color: rgb(243, 247, 234);
 }
@@ -34,13 +30,6 @@ nav .brand-logo, .sidenav-trigger, .table-title, .footer-links>a:hover {
 
 #about .col>p:first-child {
   margin: 0;
-}
-
-:target::before {
-  content: "";
-  display: block;
-  height: 64px;
-  margin: -64px 0 0;
 }
 
 /* table */
