@@ -37,7 +37,10 @@
       const elementId = this.getAttribute('href');
       const top = elementId === '#' ? 0 : document.querySelector(elementId).offsetTop - 64;
       window.scroll({ top, left: 0, behavior: 'smooth' });
-      gtag('event', 'nav', { 'type': this.textContent });
+      gtag('event', 'Nav Click', {
+        'event_category': 'Click',
+        'event_label': this.textContent
+      });
     }
     navs.forEach((nav) => nav.addEventListener('click', bindScrollEffect));
   });
