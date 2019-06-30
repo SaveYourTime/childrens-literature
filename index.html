@@ -59,7 +59,7 @@
   </header>
 
   <section>
-    <img class="banner" src="img/banner.png" alt="" />
+    <img class="banner" src="img/banner.png" alt="" loading="eager" />
   </section>
 
   <main>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="col s12 l6">
-            <img class="responsive-img" src="img/author.png">
+            <img class="responsive-img" src="img/author.png" loading="lazy" />
           </div>
           <div class="col s12 l6">
             <p class="left-align light">
@@ -172,7 +172,7 @@
             <div class="col s12 m6 l4">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="img/works/works-1.png">
+                  <img src="img/works/works-1.png" loading="lazy" />
                 </div>
                 <div class="card-content center">
                   <span class="card-title">《赤腳小羅漢》</span>
@@ -182,7 +182,7 @@
             <div class="col s12 m6 l4">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="img/works/works-2.png">
+                  <img src="img/works/works-2.png" loading="lazy" />
                 </div>
                 <div class="card-content center">
                   <span class="card-title">《圳水、漫入田園》</span>
@@ -192,7 +192,7 @@
             <div class="col s12 m6 l4">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="img/works/works-3.png">
+                  <img src="img/works/works-3.png" loading="lazy" />
                 </div>
                 <div class="card-content center">
                   <span class="card-title">《我們住在水源頭》</span>
@@ -202,7 +202,7 @@
             <div class="col s12 m6 l6 clear-fix">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="img/works/works-4.png">
+                  <img src="img/works/works-4.png" loading="lazy" />
                 </div>
                 <div class="card-content center">
                   <span class="card-title">《南風之歌》</span>
@@ -212,7 +212,7 @@
             <div class="col s12 m6 l6">
               <div class="card hoverable">
                 <div class="card-image">
-                  <img src="img/works/works-5.png">
+                  <img src="img/works/works-5.png" loading="lazy" />
                 </div>
                 <div class="card-content center">
                   <span class="card-title">《台灣萍蓬蓮又見春天》</span>
@@ -236,10 +236,10 @@
             <div class="col s12 l6">
               <div class="slider">
                 <ul class="slides">
-                  <li><img src="img/info/info-1.png"></li>
-                  <li><img src="img/info/info-2.png"></li>
-                  <li><img src="img/info/info-3.png"></li>
-                  <li><img src="img/info/info-4.png"></li>
+                  <li><img src="img/info/info-1.png" loading="lazy" /></li>
+                  <li><img src="img/info/info-2.png" loading="lazy" /></li>
+                  <li><img src="img/info/info-3.png" loading="lazy" /></li>
+                  <li><img src="img/info/info-4.png" loading="lazy" /></li>
                 </ul>
               </div>
             </div>
@@ -452,6 +452,51 @@
         </div>
       </div>
     </div>
+
+    <div class="container-wrapper" id="">
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12">
+              <div class="section">
+                <h4 class="grey-text text-darken-3">展覽活動花絮</h4>
+              </div>
+            </div>
+            <div class="col s12 xl6">
+              <div class="col s12">
+                <div class="section">
+                  <h5 class="amber-text text-darken-2 center-align">展覽開幕茶會</h5>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="carousel carousel-slider">
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/highlights/1.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/highlights/2.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/highlights/3.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/highlights/4.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/highlights/5.jpg"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 xl6">
+              <div class="col s12">
+                <div class="section">
+                  <h5 class="amber-text text-darken-2 center-align">展區剪影</h5>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="carousel carousel-slider">
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/area/1.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/area/2.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/area/3.jpg"></a>
+                  <a class="carousel-item" href="javascript:void(0);"><img src="img/area/4.jpg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="page-footer black">
@@ -468,13 +513,13 @@
           <h5 class="white-text title">連結</h5>
           <a href="https://is.gd/48GeDi">
             <div class="col s12 m6 l6 valign-wrapper footer-link">
-              <img src="img/fb-link.jpg" alt="" class="circle responsive-img">
+              <img src="img/fb-link.jpg" alt="" class="circle responsive-img" loading="lazy" />
               <span>桃園市兒童文學館FB</span>
             </div>
           </a>
           <a href="https://www.typl.gov.tw/">
             <div class="col s12 m6 l6 valign-wrapper footer-link">
-              <img src="img/library-link.png" alt="" class="circle responsive-img">
+              <img src="img/library-link.png" alt="" class="circle responsive-img" loading="lazy" />
               <span>桃園市立圖書館官網</span>
             </div>
           </a>
@@ -483,7 +528,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <a class="grey-text" href="https://saveyourtime.github.io/" target="_blank">SaveYourTime © 2019 Created by Aaron Lu</a>
+        <a class="grey-text" href="https://saveyourtime.github.io/" target="_blank">SaveYourTime © 2019 Created by Aaron
+          Lu</a>
       </div>
     </div>
   </footer>

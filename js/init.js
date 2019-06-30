@@ -19,6 +19,11 @@
       interval: 2000,
     });
 
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+
     document.querySelector('.read-more a').addEventListener('click', () => {
       document.querySelector('.read-more').style.display = 'none';
       document.querySelector('.table-wrapper').style.maxHeight = `${document.querySelector('.table-wrapper').scrollHeight}px`;
