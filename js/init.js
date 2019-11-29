@@ -21,18 +21,11 @@
     let counts = 0;
     return () => counts += 1;
   })();
-  
-  document.addEventListener('lazyloaded', (e) => {
-    if (e.target.closest('.slider')) {
-      const counts = addCount();
-      if (counts === document.querySelector('.slider .slides').childElementCount) {
-        M.Slider.init(document.querySelector('.slider'), {
-          height: 300,
-          duration: 500,
-          interval: 2000,
-        });
-      }
-    }
+
+  M.Slider.init(document.querySelector('.slider'), {
+    height: 300,
+    duration: 500,
+    interval: 2000,
   });
 
   document.querySelector('.read-more a.btn').addEventListener('click', () => {
