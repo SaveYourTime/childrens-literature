@@ -1,6 +1,4 @@
 (() => {
-  // M.AutoInit();
-
   const sidenav = M.Sidenav.init(document.querySelector('.sidenav'));
   sidenav.el.addEventListener('click', (e) => {
     if (e.target instanceof HTMLAnchorElement) {
@@ -16,11 +14,6 @@
     fullWidth: true,
     indicators: true
   });
-
-  const addCount = (() => {
-    let counts = 0;
-    return () => counts += 1;
-  })();
 
   M.Slider.init(document.querySelector('.slider'), {
     height: 300,
